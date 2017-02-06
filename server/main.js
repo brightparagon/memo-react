@@ -12,7 +12,6 @@ import session from 'express-session';
 
 import api from './routes';
 
-
 const app = express();
 const port = 3000;
 const devPort = 4000;
@@ -25,7 +24,7 @@ const db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', () => { console.log('Connected to mongodb server'); });
 // mongoose.connect('mongodb://username:password@host:port/database=');
-mongoose.connect('mongodb://localhost/codelab');
+mongoose.connect('mongodb://localhost/memo-react');
 
 /* use session */
 app.use(session({

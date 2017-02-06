@@ -2,7 +2,6 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-
     entry: [
         'babel-polyfill',
         './src/index.js',
@@ -37,7 +36,6 @@ module.exports = {
         }
     },
 
-
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],
@@ -62,6 +60,4 @@ module.exports = {
     resolve: {
         root: path.resolve('./src')
     }
-
-
 };
